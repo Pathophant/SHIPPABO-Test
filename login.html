@@ -1,0 +1,53 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- component -->
+<div class="relative flex h-full w-full">
+    <!-- Pantalla de Login -->
+    <div class="h-screen w-1/2 bg-gray-800">
+      <div class="mx-auto flex h-full w-2/3 flex-col justify-center text-white xl:w-1/2">
+        <div>
+          <p class="text-2xl font-semibold">Login</p>
+          <p class="text-sm">Por favor, inicia sesión para continuar.</p>
+        </div>
+        <div class="my-6">
+          <button class="flex w-full justify-center rounded-3xl border-none bg-gray-600 p-1 text-white hover:bg-gray-500 sm:p-2">
+            <img src="https://freesvg.org/img/1534129544.png" class="mr-2 w-6 object-fill" />Iniciar sesión con Google
+          </button>
+        </div>
+        <div>
+          <fieldset class="border-t border-solid border-gray-600">
+            <legend class="mx-auto px-2 text-center text-sm text-gray-400">O inicia sesión con nuestro sistema seguro</legend>
+          </fieldset>
+        </div>
+        <div class="mt-10">
+          <form>
+            <div>
+              <label class="mb-2.5 block font-extrabold text-gray-300" for="email">Correo electrónico</label>
+              <input type="email" id="email" class="inline-block w-full rounded-full bg-gray-700 p-2.5 leading-none text-white placeholder-gray-400 shadow placeholder:opacity-50" placeholder="mail@usuario.com" />
+            </div>
+            <div class="mt-4">
+              <label class="mb-2.5 block font-extrabold text-gray-300" for="password">Contraseña</label>
+              <input type="password" id="password" class="inline-block w-full rounded-full bg-gray-700 p-2.5 leading-none text-white placeholder-gray-400 shadow" />
+            </div>
+            <div class="mt-4 flex w-full flex-col justify-between sm:flex-row">
+              <!-- Recordarme -->
+              <div><input type="checkbox" id="remember" /><label for="remember" class="mx-2 text-sm text-gray-400">Recordarme</label></div>
+              <!-- Olvidé la contraseña -->
+              <div>
+                <a href="#" class="text-sm text-gray-400 hover:text-gray-200">Olvidé mi contraseña</a>
+              </div>
+            </div>
+            <div class="my-10">
+              <button class="w-full rounded-full bg-indigo-600 p-5 hover:bg-indigo-700">Iniciar sesión</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Imagen de fondo -->
+    <div class="h-screen w-1/2 bg-blue-600">
+      <img src="https://images.pexels.com/photos/2523959/pexels-photo-2523959.jpeg" class="h-full w-full object-cover" />
+    </div>
+  </div>
+  
